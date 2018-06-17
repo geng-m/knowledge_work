@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e57d28d7-6873-436f-85f3-23ee0b8ce6ad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPARQL_Query.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pachong.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +16,20 @@
       <file leaf-file-name="get_data_Sparal.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/get_data_Sparal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+            <state relative-caret-position="112">
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="48" />
               <folding>
                 <element signature="e#16#61#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_data_spider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_data_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
             </state>
           </provider>
         </entry>
@@ -35,8 +42,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/get_data_spider.py" />
         <option value="$PROJECT_DIR$/get_data_Sparal.py" />
+        <option value="$PROJECT_DIR$/get_data_spider.py" />
       </list>
     </option>
   </component>
@@ -160,15 +167,15 @@
     <entry file="file://$PROJECT_DIR$/SPARQL_Query.py" />
     <entry file="file://$PROJECT_DIR$/get_data_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        <state relative-caret-position="1292">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_data_Sparal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        <state relative-caret-position="112">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="48" />
           <folding>
             <element signature="e#16#61#0" expanded="true" />
           </folding>
