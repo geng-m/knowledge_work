@@ -1,8 +1,8 @@
 # knowledge_work
 
-**设计思路：Design_description.md**
-**功能描述：Function_description.md**
-**使用说明：Usage_description.md**
+**设计思路：Design_description.md**</br>
+**功能描述：Function_description.md**</br>
+**使用说明：Usage_description.md**</br>
 
 通过get_data_*.py进行测试，获取到电影信息（其中包括Sparql语句，其中没有的数据通过spider进行获取），测试通过之后将其集成到net中
 1).<div align="center">
