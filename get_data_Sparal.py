@@ -7,7 +7,7 @@ def get_content_list(searchtxt):
     query_str = """
         PREFIX dbo:<http://dbpedia.org/ontology/>
         SELECT * WHERE{
-            ?url rdf:type<http://dbpedia.org/ontology/Film>;
+            ?url rdf:type<http://dbpedia.org/ontology/Book>;
             rdfs:label ?label;
             foaf:name ?name;
             dbo:wikiPageID ?wikiPageID;

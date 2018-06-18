@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e57d28d7-6873-436f-85f3-23ee0b8ce6ad" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_data_Sparal.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data_Sparal.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +16,8 @@
       <file leaf-file-name="get_data_Sparal.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/get_data_Sparal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="48" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="48" />
+            <state relative-caret-position="245">
+              <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="45" />
               <folding>
                 <element signature="e#16#61#0" expanded="true" />
               </folding>
@@ -42,8 +42,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/get_data_Sparal.py" />
         <option value="$PROJECT_DIR$/get_data_spider.py" />
+        <option value="$PROJECT_DIR$/get_data_Sparal.py" />
       </list>
     </option>
   </component>
@@ -174,8 +174,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/get_data_Sparal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="48" />
+        <state relative-caret-position="245">
+          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="45" />
           <folding>
             <element signature="e#16#61#0" expanded="true" />
           </folding>
