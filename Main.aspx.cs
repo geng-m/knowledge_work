@@ -12,17 +12,27 @@ public partial class Main : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        getData("");
+        if (!IsPostBack)
+        {
+            try
+            {
+                getData("War");
+
+            }
+            catch {
+                getData(this.txt_search.Text.Trim());
+            }
+        }
     }
     protected void btn_search_Click(object sender, EventArgs e)
     {
-        string name = this.TextBox1.Text.Trim();
+        string name = this.txt_search.Text.Trim();
         getData(name);
     }
     public void getData(string name) 
     { 
         SparqlRemoteEndpoint endpoint = new SparqlRemoteEndpoint(new Uri("http://dbpedia.org/sparql"), "http://dbpedia.org");
-        string query_str = "PREFIX dbo:<http://dbpedia.org/ontology/>  SELECT * WHERE{ ?url rdf:type<http://dbpedia.org/ontology/Film>;rdfs:label ?label;foaf:name ?name;dbo:wikiPageID ?wikiPageID;dbo:abstract ?abstract OPTIONAL{?url dbo:writer ?writer} filter regex(?name,'"+name+"')}";
+        string query_str = "PREFIX dbo:<http://dbpedia.org/ontology/>  SELECT * WHERE{ ?url rdf:type<http://dbpedia.org/ontology/Film>;rdfs:label ?label;foaf:name ?name;dbo:wikiPageID ?wikiPageID;dbo:abstract ?abstract OPTIONAL{?url dbo:writer ?writer} filter regex(?label,'en') filter regex(?name,'" + name + "')}";
         SparqlResultSet results = endpoint.QueryWithResultSet(query_str);
 
         DataTable dt = new DataTable();
@@ -48,7 +58,14 @@ public partial class Main : System.Web.UI.Page
             dr["label"] = row[1];
             dr["name"] = row[2];
             dr["wikiPageID"] = row[3];
-            dr["abstract"] = Convert.ToString(row[4]).Substring(0, 56);
+            string str_abstrict = Convert.ToString(row[4]);
+            if (str_abstrict.Length > 56)
+            {
+                dr["abstract"] = str_abstrict.Substring(0, 56);
+            }
+            else {
+                dr["abstract"] = str_abstrict;
+            }
             dr["writer"] = row[5];
             dt.Rows.Add(dr);
             //index += 1;

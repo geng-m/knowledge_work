@@ -15,7 +15,7 @@
                 
                 <td style="width: 25%" align="center">
                     <asp:Label ID="Label1" runat="server" Text="Name:"></asp:Label>
-                    <asp:TextBox ID="TextBox1" runat="server">12 monkey</asp:TextBox>
+                    <asp:TextBox ID="txt_search" runat="server">War</asp:TextBox>
                 </td>
                 
                 <td style="width: 25%" align="center">
