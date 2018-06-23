@@ -1,6 +1,9 @@
 ﻿<%@ Page Language="C#" Debug="true" AutoEventWireup="true" CodeFile="Recommond.aspx.cs"
     Inherits="Main" %>
 
+<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <link href="resource/css/gridcss.css" rel="stylesheet" type="text/css" />
@@ -26,8 +29,26 @@
                 </td>
             </tr>
         </table>
+
     </div>
     <div>
+            <table style="width: 100%">
+            <tr>
+                <td align="center">
+                    <asp:Chart ID="chart_show" runat="server" Width="782px">
+                    <Series>
+                        <asp:Series Name="Series1" IsValueShownAsLabel=true>
+                        </asp:Series>
+                    </Series>
+                    <ChartAreas>
+                        <asp:ChartArea Name="ChartArea1">
+                        </asp:ChartArea>
+                    </ChartAreas>
+                </asp:Chart>
+                </td>
+            </tr>
+            </table>
+    </div>
         <asp:GridView ID="grid_data" runat="server" AutoGenerateColumns="False" CssClass="Check"
             Width="100%" CellPadding="4" ForeColor="#333333" GridLines="None">
             <AlternatingRowStyle BackColor="White" />
@@ -50,7 +71,7 @@
             <SortedDescendingCellStyle BackColor="#D4DFE1" />
             <SortedDescendingHeaderStyle BackColor="#15524A" />
         </asp:GridView>
-    </div>
+        
     </form>
 </body>
 </html>

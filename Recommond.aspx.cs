@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using VDS.RDF.Query;
 using VDS.RDF.Parsing;
 using System.Data;
+using System.Web.UI.DataVisualization.Charting;
 
 public partial class Main : System.Web.UI.Page
 {
@@ -41,16 +42,36 @@ public partial class Main : System.Web.UI.Page
 
         dt.Columns.Add(dc1);
         dt.Columns.Add(dc2);
-
+        Dictionary<string, int> d = new Dictionary<string, int>();
         foreach (SparqlResult row in results)
         {
             DataRow dr = dt.NewRow();
             dr["callret-0"] = Convert.ToString(row[0]).Split('^')[0];
+            string key = Convert.ToString(row[0]).Split('^')[0];
             dr["callret-1"] = row[1];
             dt.Rows.Add(dr);
-        }
 
+            if (d.Keys.Contains(key))
+            {
+                d[key] += 1;
+            }
+            else {
+                d.Add(key,1);
+            }
+        }
         this.grid_data.DataSource = dt;
         this.grid_data.DataBind();
+
+        chart_show.Series.Clear();
+        Series Strength = new Series("similar");
+        Strength.ChartType = SeriesChartType.Column;
+        foreach(string key in d.Keys){
+            Strength.Points.AddXY(key, d[key]);
+        }
+        Strength.IsValueShownAsLabel = true;
+        chart_show.ChartAreas[0].AxisX.Title = "相似程度";
+        chart_show.ChartAreas[0].AxisY.Title = "个数";
+
+        chart_show.Series.Add(Strength);
     }
 }
