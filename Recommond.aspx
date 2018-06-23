@@ -15,7 +15,7 @@
                 
                 <td style="width: 25%" align="center">
                     <asp:Label ID="Label1" runat="server" Text="输入类别"></asp:Label>
-                    <asp:TextBox ID="txt_recommond" runat="server">Love</asp:TextBox>
+                    <asp:TextBox ID="txt_recommond" runat="server">Star_Wars</asp:TextBox>
                 </td>
                 
                 <td style="width: 25%" align="center">
@@ -32,22 +32,10 @@
             Width="100%" CellPadding="4" ForeColor="#333333" GridLines="None">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
-                <asp:BoundField DataField="url" HeaderText="地址">
+                <asp:BoundField DataField="callret-1" HeaderText="电影名称">
                     <ItemStyle Height="20px" />
                 </asp:BoundField>
-                <asp:BoundField DataField="label" HeaderText="标签">
-                    <ItemStyle Height="20px" />
-                </asp:BoundField>
-                <asp:BoundField DataField="name" HeaderText="名称">
-                    <ItemStyle Height="20px" />
-                </asp:BoundField>
-                <asp:BoundField DataField="wikiPageID" HeaderText="wiki地址">
-                    <ItemStyle Height="20px" />
-                </asp:BoundField>
-                <asp:BoundField DataField="abstract" HeaderText="摘要">
-                    <ItemStyle Height="20px" />
-                </asp:BoundField>
-                <asp:BoundField DataField="writer" HeaderText="作者">
+                <asp:BoundField DataField="callret-0" HeaderText="相似级别">
                     <ItemStyle Height="20px" />
                 </asp:BoundField>
             </Columns>
