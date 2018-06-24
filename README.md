@@ -12,7 +12,7 @@
 <div align="center">
   <img width="600" height="300" align="center" src="https://github.com/gengmiao/knowledge_work/blob/master/imgs/Shawshank_Redemption.png"/>
 </div>
-2).输入电影类别，查询该类别下的电影，作为推荐，效果如下所示：</br>
+2).输入电影名称，搜索和该电影具有相似属性的其他电影，作为推荐，效果如下所示：</br>
 <div align="center">
   <img width="600" height="300" align="center" src="https://github.com/gengmiao/knowledge_work/blob/master/imgs/recommond_result.png"/>
 </div>
